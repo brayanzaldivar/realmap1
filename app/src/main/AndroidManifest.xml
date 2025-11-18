@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.realapp">
+
+    <!-- Permisos necesarios para el GPS y conexión a internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Real App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Token PÚBLICO de Mapbox (nunca coloques el SK aquí) -->
+        <meta-data
+            android:name="MAPBOX_ACCESS_TOKEN"
+            android:value="sk.eyJ1IjoiYXJ0ZXN0dWRpbyIsImEiOiJjbWhqczFoenAxYzdrMnFxM3Y5emZiZTY2In0.OoXNR3MexF0vDX2_qI56dw
+
+
+pk.eyJ1IjoiYXJ0ZXN0dWRpbyIsImEiOiJjbWhqcjV6YmcxaGR1MnBxMDcyZGt3cTZsIn0.QVQmwSx70LjbWT_qfgn9Wg
+
+
+mapbox://styles/artestudio/cmgfwub2f00km01qw9mqj1g9r
+" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
